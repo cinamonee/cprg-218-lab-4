@@ -11,31 +11,59 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Dosis:wght@200..800&family=Kaisei+Decol&display=swap" rel="stylesheet">
+  <script src="./Script/main.js" async defer></script> 
   <title>Cinnamon Cat Cafe</title>
 </head>
 <body>
+
+
   <section class="hero-container">
       <div class="hero-text">
       <h1>Welcome to Cinnamon Cat Cafe!</h1>
       <p>Have a purrfect time!</p>
     </div>
-    <button>Meet the Cats!</button>
   </section>
 
-  <section class="container content-container">
-    <!-- Remove and add content HTML -->
-    <div class="remove-assignment-content">
-      <h1>Content</h1>
+  <section class="content-container">
+    <ul>
+      <li>
+    <div class="first-description">
+      <h1>Cat of the Week</h1>
+      <p>Meet Meatball, our feisty 2 year old brown british shorthair! He's an energetic, playful cat that loves the spotlight.</p>
+      <a href="#content">Learn More </a>
     </div>
+    <img class="image-1" src="./Assets/Meatball.jpg" alt="Brown Britsh Shorthair Cat">
+    </li>
+    </ul>
   </section>
-  <section class="container accordion-container">
-    <!-- Remove and add accordion HTML -->
-    <div class="remove-assignment-content">
-      <h1>Accordion</h1>
-    </div>
-  </section>
-  <section class="footer-container">
-    <!-- Remove and add footer HTML -->
+
+  <section class="accordion-container" id="accordion">
+    <ul>
+      <li class="accordion-content">
+        <button class="accordion">Adoptable Cats<span  class="acc-icon"></span></button>
+          <div class="panel">
+          <p>All of the cats at Cinnamon Cat Cafe are adoptable. Look forward to taking home a cuddly and furry friend today. We partner with the ForeverPaws foundation. </p>
+          </div>
+        </li>
+          <li class="accordion-content"> 
+            <button class="accordion">Cozy Space<span class="acc-icon"></span></button>
+            <div class="panel">
+              <p>We are located in a historic brick building and there are plenty of comfortable seats for you to enjoy your drinks or relax in our cafe space. There is a selection of board games and books for your enjoyment. 
+              </p>
+            </div>
+            </li>
+            <li class="accordion-content borderBottom-AC3">
+              <button class="accordion">Cafe Drinks<span class="acc-icon"></span></button>
+              <div class="panel">
+                <p>
+                  Enjoy our full range coffee bar that offers all of your favorite caffeinated drinks. We also serve dairy-free options and have a range of teas from JustSteeply. 
+              </div>
+            </li>
+          </ul>
+        </section>
+
+<footer class="footer-container">
+  
     <div class="remove-assignment-content">
       <h1>Footer</h1>
     </div>

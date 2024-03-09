@@ -1,18 +1,12 @@
-.remove-assignment-content {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+html, body{
+  scroll-behavior: smooth;
+  font-family: "Dosis", Arial, sans-serif;
 }
 
 .hero-container {
   background: url(../Assets/catmain.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  /*background-position: center;*/ 
   color: #fff;
   height: 100vh;
   display: flex;
@@ -20,20 +14,104 @@
   justify-content: center;
   flex-direction: column;
 }
-.hero-text p{
-  text-align: center;
+
+@media screen and (min-width: 1200px) {
+  .hero-container{
+    background: url(../Assets/catmain.jpg) center/cover no-repeat fixed;
+ }
+}
+/*mobile*/
+.content-container{
+min-height: 100vh;
+background-color: rgb(120, 120, 236);
+
+}
+.content-container ul{
+  margin-top: 4rem;
+}
+.content-container li{
+  display:flex;
+  align-items: center;
 }
 
-.content-container {
-  background-color: #dbd56e;
-  height: 600px;
+.first-description{
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  margin-inline: 2rem;
+}
+
+.content-container p{
+  font-size: 25px;
+  color:black;
+}
+
+.content-container img{
+  width: 100%;
+  max-width: 475px;
+  height: auto;
+}
+
+/*button style*/
+.content-container a{
+  text-decoration: none;
+  color: rgb(244, 246, 248);
+  max-width: 8rem;
+  font-size: medium;
+  margin: 1rem 0 4rem 0;
+}
+
+.content-container a:hover{
+  background-color: rgb(156, 189, 176);
+  text-decoration: underline;
 }
 
 .accordion-container {
-  background-color: #fc7753;
-  color: #fff;
-  height: 600px;
+  margin-block: 3rem;
+  background-color: rgba(58, 110, 179, 0.635);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
+
+.active, .accordion:hover {
+  background-color:bisque
+}
+
+.panel{
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion-container li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-block: 0.3rem;
+}
+
+.accordion-container button{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(202, 178, 240);
+  color: black;
+  border-top: 1px solid black;
+  border-bottom: none;
+  border-inline: none;
+  padding: 18px;
+  font-size: 30px;
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+}
+
 
 .footer-container {
   background-color: #f2efea;
