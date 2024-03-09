@@ -15,6 +15,7 @@ for (i = 0; i < acc.length; i++) {
 }
 
 const currentDate = new Date();
+const CinnamonCatCafe = "CinnamonCatCafe"
 const year = currentDate.getFullYear();
-const result = `${year} ${aloha}`
- document.getElementById("copyRightYearAloha").outerHTML = result
+const result = `${year} ${CinnamonCatCafe}`
+ document.getElementById("copyRightYearCinnamonCatCafe").outerHTML = result

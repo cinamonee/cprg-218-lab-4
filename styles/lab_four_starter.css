@@ -15,6 +15,15 @@ html, body{
   flex-direction: column;
 }
 
+.hero-container h1 {
+  font-size: 8vh;
+}
+
+.hero-container p {
+  font-size: 4vh;
+  text-align: center;
+}
+
 @media screen and (min-width: 1200px) {
   .hero-container{
     background: url(../Assets/catmain.jpg) center/cover no-repeat fixed;
@@ -112,10 +121,41 @@ background-color: rgb(120, 120, 236);
   text-align: left;
 }
 
-
 .footer-container {
   background-color: #f2efea;
+  min-height: 45vh;
+}
+
+.footer-container h2 {
+  font-weight: bold;
+}
+
+.footer-container li {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.footer-info,
+.footer-links {
+  margin: 1rem;
+}
+
+.footer-links a{
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-container iframe{
   width: 100%;
-  height: 300px;
-  position: relative;
+  height: 15rem;
+} 
+
+.copyright{
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
 }
